@@ -1,0 +1,321 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    font-size: 100%;
+    font-family: sans-serif;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin-right: auto;
+}
+.logo p{
+    width: 70%;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+.logo-hamburger{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 1rem 1.5rem;
+}
+.menu{
+    line-height: 3.5rem;
+    padding: 1rem 2rem;
+    background-color: black;
+    display: none;
+}
+.menu ul li a{
+    color: white;
+    margin-block: 1rem;
+}
+.menu.show{
+    display: flex;
+}
+.hero{
+    padding:2rem 0.7rem;
+    background-image: url("pexels-binyamin-mellish-1396122.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+.hero h1{
+    margin-block: 2rem;
+    color: whitesmoke;
+}
+.hero p{
+    width: 70%;
+    line-height: 1.6rem;
+    font-size: 90%;
+    color: snow;
+}
+.learn-more p{
+    width: max-content;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: crimson;
+    font-weight: 600;
+    border-radius: 1rem;
+    margin-block: 1.5rem;
+    text-transform: uppercase;
+}
+.about-us{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.about-us-content{
+    padding: 0.5rem 0.7rem;
+}
+.about-us-image{
+    width: 100%;
+    height: auto;
+    margin-block: 1rem;
+}
+.about-us-image img{
+    width: 100%;
+    height: 100%;
+}
+.about-us-content h1{
+    text-align: center;
+    margin-block: 1rem;
+    color: crimson;
+}
+.about-us-content p{
+    line-height: 1.4rem;
+    font-size: 90%;
+}
+.more-btn p{
+    background-color: crimson;
+    color: white;
+    width: max-content;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    margin: 1.2rem auto;
+    text-transform: uppercase;
+}
+.reason{
+    padding: 0.5rem 0.7rem;
+}
+.reason h1{
+    text-align: center;
+    margin-block: 0.6rem;
+    color: crimson;
+}
+.reason-card{
+    margin-block: 1rem;
+}
+.reason-card h2{
+    width: 70%;
+    font-weight: 400;
+    margin: 0.6rem auto;
+    text-align: center;
+    color: goldenrod;
+}
+hr{
+    width: 70%;
+    margin: 0.5rem auto;
+}
+.reason-card p{
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 90%;
+}
+.work{
+    padding: 2.5rem 0;
+}
+.work h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: crimson;
+}
+.work-image{
+    width: 100%;
+    height: auto;
+}
+.work-image img{
+    width: 100%;
+    height: 100%;
+}
+.testimony{
+    margin-block: 1rem;
+}
+.testimony-card{
+    text-align: center;
+}
+.testimony-card img{
+    margin: 1rem 0;
+}
+.testimony-card p{
+    padding: 0.9rem 0.7rem;
+}
+footer{
+    margin: 0.5rem 0 3rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-link{
+    margin-block: 1rem;
+    line-height: 2.6rem;
+    text-align: center;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+.footer-link a{
+    color: black;
+    cursor: pointer;
+}
+.footer-link p a{
+    font-weight: 700;
+    color: crimson;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    fill: crimson;
+}
+footer h4,
+footer >p{
+    font-size: 90%;
+    text-align: center;
+    margin: 0.5rem;
+}
+@media screen and (min-width:428px) {
+    .hamburger{
+        display: none;
+    }
+    .logo-hamburger{
+        margin-right: auto;
+    }
+    .hero{
+        height: 80vh;
+    }
+    .logo-menu{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-inline: 1rem;
+    }
+    .logo p{
+        width: 100%;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+    .logo svg{
+        width: 3.3rem;
+        cursor: pointer;
+    }
+    .menu{
+        display: flex;
+        height: 0;
+       background-color: white;
+    }
+    .menu ul{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        font-weight: 700;
+    }
+    .menu ul li a{
+        color: black;
+    }
+    .hero{
+        padding-inline: 4rem;
+    }
+    .hero h1{
+        padding-top: 3rem;
+        width: 50%;
+        font-size: 4rem;
+    }
+    .hero p{
+        width: 40%;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+    .learn-more p{
+        width: max-content;
+        cursor: pointer;
+    }
+    .about-us{
+        flex-direction: row;
+        margin: 2rem 0;
+        padding-inline: 2rem;
+        justify-content: space-between;
+        gap: 5rem;
+    }
+    .about-us-image{
+        width: 50%;
+    }
+    .about-us-content{
+        width: 50%;
+        text-align: center;
+    }
+    .about-us-content h1{
+        font-size: 2.3rem;
+    }
+    .reason h1,
+    .work h1{
+        font-size: 2rem;
+    }
+    .reason-sub{
+        display: flex;
+    }
+    .reason-card{
+        margin: 1rem auto;
+        width: 60%;
+    }
+    .testimony{
+        margin: 4rem 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    .testimony-card{
+        width: 30%;
+    }
+    .testimony-card p{
+        line-height: 1.5rem;
+    }
+    .footer{
+        flex-direction: row;
+        justify-content: center;
+        gap: 9rem;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+    .footer-logo{
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .footer-logo p{
+        font-size: 1.7rem;
+    }
+    .footer-logo svg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .footer-link a{
+        font-size: 1.3rem;
+    }
+    
+    
+}
